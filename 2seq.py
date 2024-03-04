@@ -1,0 +1,7 @@
+user_nums = input('Введите цифры через запятую: ')
+nums_set = set(user_nums)
+nums_set.discard(',')
+nums_set.discard(' ')
+nums_set.discard('/')
+nums_set.discard(';')
+print(list(nums_set))
